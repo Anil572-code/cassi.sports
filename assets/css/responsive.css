@@ -1,0 +1,232 @@
+/* =========================================================
+   Responsive Styles
+========================================================= */
+
+@media (max-width: 1200px) {
+  .hero-grid,
+  .grid-2,
+  .footer-grid {
+    gap: 26px;
+  }
+
+  .nav-links {
+    gap: 18px;
+  }
+
+  .hero-visual-panel {
+    min-height: 500px;
+  }
+}
+
+@media (max-width: 991px) {
+  .section {
+    padding: 88px 0;
+  }
+
+  .hero {
+    padding: 32px 0 70px;
+  }
+
+  .hero-grid,
+  .grid-2,
+  .footer-grid,
+  .grid-4,
+  .grid-3,
+  .form-grid,
+  .cta-banner,
+  .stat-strip {
+    grid-template-columns: 1fr;
+  }
+
+  .hero-stats {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .menu-toggle {
+    display: inline-flex;
+  }
+
+  .nav-links,
+  .nav-actions .desktop-only {
+    display: none;
+  }
+
+  .mobile-menu {
+    display: block;
+    position: fixed;
+    inset: 88px 16px auto 16px;
+    padding: 18px;
+    border-radius: 24px;
+    background: rgba(5, 14, 25, 0.95);
+    border: 1px solid rgba(255,255,255,0.08);
+    box-shadow: var(--shadow);
+    opacity: 0;
+    transform: translateY(-10px);
+    pointer-events: none;
+    transition: 0.28s ease;
+  }
+
+  .mobile-menu.open {
+    opacity: 1;
+    transform: translateY(0);
+    pointer-events: auto;
+  }
+
+  .mobile-menu nav {
+    display: grid;
+    gap: 8px;
+  }
+
+  .mobile-menu a,
+  .mobile-menu .btn {
+    width: 100%;
+  }
+
+  .mobile-menu a {
+    padding: 14px 16px;
+    border-radius: 16px;
+    background: rgba(255,255,255,0.04);
+    border: 1px solid transparent;
+    font-weight: 600;
+  }
+
+  .mobile-menu a.active,
+  .mobile-menu a:hover {
+    border-color: rgba(255,255,255,0.08);
+  }
+
+  .brand img {
+    width: 132px;
+  }
+
+  .hero-logo {
+    width: min(100%, 360px);
+  }
+
+  .gallery-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .span-4,
+  .span-5,
+  .span-6,
+  .span-7,
+  .span-8 {
+    grid-column: span 1;
+  }
+
+  .gallery-item.tall {
+    min-height: 260px;
+  }
+
+  .page-hero-card,
+  .form-wrap,
+  .cta-banner,
+  .card {
+    padding: 26px;
+  }
+}
+
+@media (max-width: 767px) {
+  .container {
+    width: min(calc(100% - 24px), var(--container));
+  }
+
+  .navbar {
+    min-height: 78px;
+  }
+
+  .hero h1 {
+    font-size: clamp(2.6rem, 11vw, 4rem);
+  }
+
+  .section-title {
+    font-size: clamp(1.8rem, 7vw, 2.7rem);
+  }
+
+  .hero-stats {
+    grid-template-columns: 1fr;
+  }
+
+  .hero-actions {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .btn {
+    width: 100%;
+  }
+
+  .footer-bottom {
+    flex-direction: column;
+  }
+
+  .page-hero {
+    padding: 64px 0 40px;
+  }
+
+  .page-hero-card {
+    border-radius: 26px;
+  }
+
+  .image-placeholder {
+    min-height: 320px;
+  }
+
+  .floating-whatsapp,
+  .back-to-top {
+    right: 16px;
+    width: 54px;
+    height: 54px;
+  }
+
+  .back-to-top {
+    bottom: 82px;
+  }
+
+  .floating-whatsapp {
+    bottom: 16px;
+  }
+
+  .gallery-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .gallery-item,
+  .gallery-item.tall {
+    min-height: 240px;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero-logo {
+    width: min(100%, 300px);
+  }
+
+  .hero p,
+  .section-subtitle,
+  .page-hero p {
+    font-size: 0.98rem;
+  }
+
+  .brand img {
+    width: 118px;
+  }
+
+  .page-hero-card,
+  .form-wrap,
+  .card,
+  .cta-banner,
+  .hero-side-card {
+    padding: 22px;
+  }
+
+  .eyebrow {
+    font-size: 0.72rem;
+    padding: 9px 14px;
+  }
+
+  .hero-visual-panel {
+    min-height: 380px;
+  }
+}
